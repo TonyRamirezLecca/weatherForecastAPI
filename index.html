@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Lab 2</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <img class="frontpage-img" src="images/rain.jpg" />
+
+    <div id="headerWrapper">
+      <div class="frontpage-title">Weather Forecast</div>
+      <form>
+        <label>Enter a U.S. city</label>
+        <input id="weatherInput" type="text" /><br />
+        <input id="weatherSubmit" type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <div class="frontpage-content">
+      <div id="instructions">
+        <p>
+          Welcome! <br />
+          To get started type in the name of a city. Then we will display the
+          forecast of that city for every 3 hours.
+        </p>
+      </div>
+      <div id="weatherResults"></div>
+      <div id="forecastResults"></div>
+    </div>
+
+    <footer>
+      <div>
+        <a href="https://www.github.com/TonyRamirezLecca/"
+          >Github<i class="fab fa-github"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"
+      integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ="
+      crossorigin="anonymous"
+    ></script>
+    <script text="type/javascript" src="script.js"></script>
+  </body>
+</html>
