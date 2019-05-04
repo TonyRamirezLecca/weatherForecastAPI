@@ -7,7 +7,7 @@ body {
   background: #2e434c;
 }
 #headerWrapper h1 {
-  padding-top: 30px;
+  padding-top: 10px;
   text-align: center;
   color: white;
 }
@@ -20,7 +20,6 @@ body {
 .formWrapper {
   display: flex;
   justify-content: center;
-  padding: 10px;
   padding-bottom: 30px;
 }
 #weatherInput {
@@ -35,14 +34,14 @@ body {
   border: none;
   padding: 5px;
   font-size: 14px;
+  color: #333;
   border-radius: 2px;
   cursor: pointer;
   margin: 0 auto;
-  background: #d1e2f1;
-  border: 3px solid grey;
+  background: #ddd;
 }
 #weatherSubmit:hover {
-  background: #ddd;
+  background: #d1e2f1;
 }
 
 .content {
