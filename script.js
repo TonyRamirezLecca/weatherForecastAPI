@@ -2,7 +2,6 @@ document
   .getElementById("weatherSubmit")
   .addEventListener("click", function(event) {
     event.preventDefault();
-    document.querySelector("#instructions").style.display = "none";
     document.querySelector("body").style.overflowY = "scroll";
     const value = document.getElementById("weatherInput").value;
     if (value === "") return;
@@ -51,7 +50,8 @@ document
             "<h2>" +
             moment(json.list[i].dt_txt).format("MMMM Do YYYY, h:mm:ss a") +
             "</h2>";
-          forecast += "<p>Temperature: " + json.list[i].main.temp + "</p>";
+          forecast +=
+            "<p>Temperature: " + json.list[i].main.temp + " &deg;F</p>";
           forecast +=
             '<img src="http://openweathermap.org/img/w/' +
             json.list[i].weather[0].icon +

@@ -12,30 +12,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <img class="frontpage-img" src="images/background.jpg" />
-
     <div id="headerWrapper">
-      <div class="frontpage-title">Weather Forecast</div>
-      <label>Enter a U.S. city</label>
+      <h1>Weather Forecast</h1>
+      <p>
+        To get started type in the name of a city. Then we will display the
+        forecast of that city.
+      </p>
+    </div>
+
+    <div class="formWrapper">
       <form>
-        <input id="weatherInput" type="text" /><br />
+        <input id="weatherInput" type="text" placeholder="name of city" />
         <input id="weatherSubmit" type="submit" value="Submit" />
       </form>
     </div>
 
-    <div class="frontpage-content">
-      <div id="instructions">
-        <p>
-          Welcome! <br />
-          To get started type in the name of a city. Then we will display the
-          forecast of that city for every 3 hours.
-        </p>
-      </div>
+    <div class="content">
       <div id="weatherResults"></div>
       <div id="forecastResults"></div>
     </div>
-
-    <footer></footer>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"
