@@ -7,7 +7,7 @@ document
     if (value === "") return;
     console.log(value);
     const url =
-      "http://api.openweathermap.org/data/2.5/weather?q=" +
+      "https://api.openweathermap.org/data/2.5/weather?q=" +
       value +
       ",US&units=imperial" +
       "&APPID=da2775a8aa189c2f0d22a5517da65b39";
@@ -20,7 +20,7 @@ document
         results += "<h2>Weather in " + json.name + "</h2>";
         for (let i = 0; i < json.weather.length; i++) {
           results +=
-            '<img src="http://openweathermap.org/img/w/' +
+            '<img src="https://openweathermap.org/img/w/' +
             json.weather[i].icon +
             '.png"/>';
         }
@@ -35,7 +35,7 @@ document
       });
 
     const url2 =
-      "http://api.openweathermap.org/data/2.5/forecast?q=" +
+      "https://api.openweathermap.org/data/2.5/forecast?q=" +
       value +
       ",US&units=imperial" +
       "&APPID=da2775a8aa189c2f0d22a5517da65b39";
@@ -53,7 +53,7 @@ document
           forecast +=
             "<p>Temperature: " + json.list[i].main.temp + " &deg;F</p>";
           forecast +=
-            '<img src="http://openweathermap.org/img/w/' +
+            '<img src="https://openweathermap.org/img/w/' +
             json.list[i].weather[0].icon +
             '.png"/>';
           forecast += "<hr>";
